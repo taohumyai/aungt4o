@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุขสันต์วันเกิด</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>สุขสันต์วันเกิดที่รัก!</h1>
+            <button onclick="startMusic()">เลื่อนลงเพื่อพบกับความประหลาดใจ</button>
+        </div>
+    </section>
+
+    <section id="memories" class="memories">
+        <h2>ความทรงจำของเรา</h2>
+        <div class="slideshow">
+            <video controls>
+                <source src="your-video.mp4" type="video/mp4">
+                เบราว์เซอร์ของคุณไม่รองรับการแสดงวิดีโอ
+            </video>
+        </div>
+    </section>
+
+    <section class="message">
+        <h2>ข้อความพิเศษ</h2>
+        <p>
+            ตั้งแต่ครั้งแรกที่เราเจอกัน ทุกช่วงเวลากับคุณเป็นเรื่องที่น่าประทับใจ และผมหวังว่าจะมีช่วงเวลาดี ๆ ร่วมกันอีกมากมาย
+        </p>
+    </section>
+
+    <section class="wishes">
+        <h2>คำอวยพรจากเพื่อนและครอบครัว</h2>
+        <div class="wish-list">
+            <video controls>
+                <source src="wish-video1.mp4" type="video/mp4">
+                เบราว์เซอร์ของคุณไม่รองรับการแสดงวิดีโอ
+            </video>
+        </div>
+    </section>
+
+    <section class="surprise">
+        <h2>คลิกเพื่อพบกับเซอร์ไพรส์!</h2>
+        <button onclick="revealGift()">เซอร์ไพรส์ฉัน</button>
+        <div id="gift" style="display: none;">
+            <p>นี่คือของขวัญสุดพิเศษของคุณ!</p>
+        </div>
+    </section>
+
+    <audio id="backgroundMusic" loop>
+        <source src="your-music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
